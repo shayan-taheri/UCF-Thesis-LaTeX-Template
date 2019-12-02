@@ -18,7 +18,17 @@
 %
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % MA, MS, PhD, EdD Thesis?? See ucfthes.cls
-\documentclass [MS] {ucfthes}   %%% See ucfthes.cls file for all options  % Draft prints notes badboxes
+\documentclass [PhD] {ucfthes}   %%% See ucfthes.cls file for all options  % Draft prints notes badboxes
+
+\usepackage{booktabs} 
+\usepackage{multirow}
+\usepackage{soul} 
+\usepackage{microtype}
+\usepackage{upgreek}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{adjustbox}
+
 %\documentclass [PhD,single,twoside] {ucfthes}
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\documentclass[12pt,leqno,openright]{book}
@@ -136,7 +146,6 @@
             % pdfstartpage = 1,      %%% Determines on which page the PDF file is opened.
             pdfstartview = FitV,   %%% Set the startup page view
             % Base URL
-            baseurl = {https://bitbucket.org/dgallagher/ucf-thesis-latex-template},
             %
             bookmarksnumbered=true  %%% If Acrobat bookmarks are requested, include section numbers. Required for UCF.
             ]{hyperref}
@@ -150,7 +159,7 @@
             pdfsubject = {Thesis, \@degreename, \@term~\@degreeyear, Univ. of Central Florida},
             pdfkeywords = {keyword 1, keyword 2},
             % pdfproducer = {dvips + ps2pdf},   %%% This is generated automatically when pdf is made, use if override is wanted.
-            pdfcreator = {LaTeX with hyperref package using Daniel Gallagher's ETD template}
+            pdfcreator = {LaTeX with hyperref package using Shayan Taheri's ETD template}
             }
 }
 \makeatother
